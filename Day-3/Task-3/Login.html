@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mr.360's</title>
+    <style>
+        /* Full-page background */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: url('background.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+
+        /* Login Container */
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            color: black;
+            width: 300px;
+        }
+
+        /* Title */
+        h1 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        h4 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        /* Form Fields */
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            background: rgba(255, 255, 255, 0.2);
+            color: black;
+            font-size: 16px;
+        }
+
+        input::placeholder {
+            color: black;
+            opacity: 0.8;
+        }
+
+        /* Button Styling */
+        .btn {
+            background: rgba(255, 255, 255, 0.2);
+            color: black;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mr.360's</h1>
+        <form method="get" action="./Catalog.html">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Login" class="btn">
+            <input type="reset" value="Reset" class="btn">
+        </form>
+        <form method="get" action="./reg.html">
+            <input type="submit" value="Register" class="btn">
+        </form>
+    </div>
+</body>
+</html>

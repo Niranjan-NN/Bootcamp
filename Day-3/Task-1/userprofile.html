@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Profile</title>
+    <style>
+        /* Full-page background */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: url('background.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            color: white;
+        }
+
+        /* Profile container */
+        .profile-container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            width: 350px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        /* Form Styling */
+        input[type="text"], 
+        input[type="password"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        input::placeholder {
+            color: white;
+            opacity: 0.8;
+        }
+
+        /* Gender Radio Buttons */
+        .gender-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 10px 0;
+        }
+
+        .gender-container label {
+            font-size: 16px;
+        }
+
+        /* Button Styling */
+        .btn {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            width: 100%;
+        }
+
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <h1>Welcome to Mr.360's Online Book Store</h1>
+        <p>Edit your profile here...</p>
+        <form method="get" action="./Catalog.html">
+            <input type="text" name="username" placeholder="Edit Username" required>
+            <input type="password" name="password" placeholder="Edit Password" required>
+
+            <div class="gender-container">
+                <label for="male"><input type="radio" name="sex" value="male" id="male" required> Male</label>
+                <label for="female"><input type="radio" name="sex" value="female" id="female"> Female</label>
+            </div>
+
+            <textarea name="address" rows="5" placeholder="Edit Address" required></textarea>
+
+            <input type="submit" value="Submit" class="btn">
+        </form>
+    </div>
+</body>
+</html>
